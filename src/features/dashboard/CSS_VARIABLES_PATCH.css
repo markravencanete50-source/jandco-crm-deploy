@@ -1,0 +1,29 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   PHASE 3 CSS VARIABLE PATCH
+   Merge these into your existing src/app/globals.css :root {} block.
+   These extend Phase 1's token system without replacing it.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+/*
+  Add inside :root { } in globals.css:
+
+  --color-bg:         #F5F3EE;
+  --color-surface:    #FAFAF8;
+  --color-ink:        #1A1A18;
+  --color-pine:       #1C4532;
+  --color-clay:       #C8693B;
+  --color-text:       #1A1A18;
+  --color-text-muted: #6B7280;
+  --color-border:     #E5E2DA;
+
+  Add inside .dark { } in globals.css (or create it):
+
+  --color-bg:         #0E1116;
+  --color-surface:    #131820;
+  --color-ink:        #0E1116;
+  --color-pine:       #2D6A4F;
+  --color-clay:       #C8693B;
+  --color-text:       #F7F7F5;
+  --color-text-muted: #6B7280;
+  --color-border:     #1f2937;
+*/

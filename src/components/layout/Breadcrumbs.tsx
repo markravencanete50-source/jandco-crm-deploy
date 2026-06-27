@@ -22,7 +22,6 @@ const SEGMENT_LABELS: Record<string, string> = {
   team: 'Team',
   integrations: 'Integrations',
   employees: 'Employees',
-  projects: 'Projects',
   new: 'New',
   edit: 'Edit',
   import: 'Import',

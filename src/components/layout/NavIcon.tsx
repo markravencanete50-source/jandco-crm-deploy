@@ -114,14 +114,6 @@ const icons: Record<NavItemId, (size: number) => React.ReactNode> = {
       <path d="M7.5 10l5-3.5M7.5 10l5 3.5" />
     </svg>
   ),
-  projects: (s) => (
-    <svg width={s} height={s} viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="3" width="7" height="7" rx="1.5" />
-      <rect x="11" y="3" width="7" height="7" rx="1.5" />
-      <rect x="2" y="12" width="7" height="5" rx="1.5" />
-      <rect x="11" y="12" width="7" height="5" rx="1.5" />
-    </svg>
-  ),
 };
 
 export function NavIcon({ id, size = 18, className }: NavIconProps) {

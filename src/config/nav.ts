@@ -14,8 +14,7 @@ export type NavItemId =
   | 'settings'
   | 'team'
   | 'employees'
-  | 'integrations'
-  | 'projects';
+  | 'integrations';
 
 export interface NavItem {
   id: NavItemId;
@@ -60,7 +59,6 @@ export const NAV_GROUPS: NavGroup[] = [
     label: 'Organization',
     items: [
       { id: 'employees', label: 'Employees', href: '/employees', icon: 'employees' },
-      { id: 'projects', label: 'Projects', href: '/projects', icon: 'projects' },
     ],
   },
   {
@@ -90,7 +88,6 @@ export const COMMAND_PALETTE_ACTIONS = [
   { id: 'new-company', label: 'New Company', shortcut: 'N O', href: '/companies/new', group: 'Create' },
   { id: 'new-activity', label: 'Log Activity', shortcut: 'N A', href: '/activities/new', group: 'Create' },
   { id: 'new-employee', label: 'New Employee', shortcut: 'N E', href: '/employees/new', group: 'Create' },
-  { id: 'new-project', label: 'New Project', shortcut: 'N P', href: '/projects/new', group: 'Create' },
   { id: 'import', label: 'Import CSV', shortcut: '', href: '/settings/import', group: 'Data' },
   { id: 'export', label: 'Export Data', shortcut: '', href: '/settings/export', group: 'Data' },
 ];
