@@ -18,9 +18,9 @@ export function AuthLayout({
   description: string;
 }) {
   return (
-    <div className="grid min-h-screen lg:grid-cols-2">
+    <div className="grid min-h-screen lg:grid-cols-2" style={{minHeight: '100dvh'}}>
       {/* Form panel */}
-      <div className="flex flex-col items-center justify-center px-6 py-12 sm:px-10 lg:px-16">
+      <div className="flex min-h-screen flex-col items-center justify-center px-6 py-12 sm:px-10 lg:px-16">
         <div className="mx-auto w-full max-w-sm">
           <div className="mb-8 flex items-center gap-2">
             <span className="flex h-7 w-7 items-center justify-center rounded-sm bg-pine-700 font-mono text-[12px] font-semibold text-paper">
