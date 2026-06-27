@@ -35,7 +35,7 @@ export function LoginForm() {
       setFormError(result.error ?? "Something went wrong. Try again.");
       return;
     }
-    setSucceeded(true);
+    window.location.href = '/dashboard';
   }
 
   if (succeeded) {
