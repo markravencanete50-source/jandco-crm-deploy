@@ -1,51 +1,41 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-
-
-:root {
-  --color-bg:         #F5F3EE;
-  --color-surface:    #FAFAF8;
-  --color-ink:        #1A1A18;
-  --color-pine:       #1C4532;
-  --color-clay:       #C8693B;
-  --color-text:       #1A1A18;
+@theme {
+  --color-paper: #FAFAF8;
+  --color-ink: #1A1A18;
+  --color-pine-50: #f0fdf4;
+  --color-pine-100: #dcfce7;
+  --color-pine-200: #bbf7d0;
+  --color-pine-300: #86efac;
+  --color-pine-400: #4ade80;
+  --color-pine-500: #22c55e;
+  --color-pine-600: #16a34a;
+  --color-pine-700: #1C4532;
+  --color-pine-800: #166534;
+  --color-pine-900: #0f3d24;
+  --color-clay: #C8693B;
+  --color-bg: #F5F3EE;
+  --color-surface: #FAFAF8;
+  --color-border: #E5E2DA;
   --color-text-muted: #6B7280;
-  --color-border:     #E5E2DA;
-  --font-sans:        'IBM Plex Sans', system-ui, sans-serif;
-  --font-mono:        'IBM Plex Mono', 'Courier New', monospace;
-}
 
-.dark {
-  --color-bg:         #0E1116;
-  --color-surface:    #131820;
-  --color-ink:        #0E1116;
-  --color-pine:       #2D6A4F;
-  --color-clay:       #C8693B;
-  --color-text:       #F7F7F5;
-  --color-text-muted: #6B7280;
-  --color-border:     #1f2937;
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --tracking-wide2: 0.08em;
+  --tracking-wide3: 0.12em;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html {
   font-family: var(--font-sans);
   background-color: var(--color-bg);
-  color: var(--color-text);
+  color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
 }
-
 body { min-height: 100dvh; }
-
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 0; }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
-
-:focus-visible { outline: 1.5px solid var(--color-pine); outline-offset: 2px; }
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-}
+:focus-visible { outline: 1.5px solid var(--color-pine-700); outline-offset: 2px; }
